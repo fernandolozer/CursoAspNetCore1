@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LinguagemCS6.TestarNulos</StartupObject>
+    <StartupObject>LinguagemCS6.FiltrosException</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dicionarios.cs" />
+    <Compile Include="ExpressoesNameOf.cs" />
+    <Compile Include="FiltrosException.cs" />
     <Compile Include="IniciarPropriedades.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
