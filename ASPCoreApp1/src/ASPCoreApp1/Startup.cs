@@ -48,6 +48,8 @@ namespace ASPCoreApp1
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddLogging();
+
             services.AddMvc();
 
             // Add application services.
