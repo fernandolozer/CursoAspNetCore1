@@ -26,7 +26,7 @@ namespace AspCore_DNX
             //app.UseWelcomePage();
             app.UseBrowserLink();
             app.UseStaticFiles();
-            
+
 
             app.Run(async (context) =>
             {
