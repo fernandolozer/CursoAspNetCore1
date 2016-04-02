@@ -27,9 +27,9 @@ namespace AspCore_DNX
             app.UseBrowserLink();
             app.UseStaticFiles();
 
-
             app.Run(async (context) =>
             {
+              throw new Exception("Aconteceu um erro.");
                 await context.Response.WriteAsync("Hello World!");
             });
         }
