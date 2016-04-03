@@ -16,14 +16,18 @@ Ele também herda de `ViewComponent`
 
 
 Action invoke da classe ViewComponent
+
  ![imagem](img/view3.png)
 
 Codigo que está dentro da view Default.cshtml
+
 ![imagem](img/view4.png)
 
 Chamada do ViewComponent dentro do meu index.cshtml
+
 ![imagem](img/view5.png)
 
 
 Resultado:
+
 ![imagem](img/view6.png)
