@@ -9,12 +9,14 @@ Dentro da pasta src de um projeto, onde tem o arquivo project.json, executar:
 
 3 - dnu restore -- para restaurar todos os pacotes de um projeto.
 
-dnx <nome da tast> --  para rodar a task configurada. os comandos ficam no arquivo project.json como segue: 
+4 - dnx <nome da tast> --  para rodar a task configurada. os comandos ficam no arquivo project.json como segue: 
 
     "commands": {
       "web": "Microsoft.AspNet.Server.Kestrel",
       "ef": "EntityFramework.Commands"
     },
+
+
 
 # Programação do Curso #
 
