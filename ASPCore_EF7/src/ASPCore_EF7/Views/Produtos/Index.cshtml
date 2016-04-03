@@ -1,0 +1,44 @@
+@model IEnumerable<ASPCore_EF7.Models.Produto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeProduto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Preco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qtde)
+        </th>
+        <th></th>
+    </tr>
+    
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeProduto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Preco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qtde)
+        </td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+            <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+            <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+        </td>
+    </tr>
+}
+</table>
