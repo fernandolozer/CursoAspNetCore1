@@ -43,7 +43,8 @@ namespace ASPCore_EF7_Entidades.Controllers
         // GET: Aluno/Create
         public IActionResult Create()
         {
-            ViewData["ProfessorID"] = new SelectList(_context.Professor, "ID", "Professor");
+            //ViewData["ProfessorID"] = new SelectList(_context.Professor, "ID", "Professor");
+            ViewData["ProfessorID"] = _context.Professor.ToList();
             return View();
         }
 

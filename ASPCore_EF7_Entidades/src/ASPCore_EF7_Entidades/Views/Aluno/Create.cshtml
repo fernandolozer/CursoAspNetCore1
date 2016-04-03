@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Create";
+    var lista = (List<Professor>)ViewData["ProfessorID"];
 }
 
 <h2>Create</h2>
@@ -35,7 +36,8 @@
         <div class="form-group">
             <label asp-for="ProfessorID" class="col-md-2 control-label"></label>
             <div class="col-md-10">
-                <select asp-for="ProfessorID" class ="form-control"></select>
+                @*<select asp-for="ProfessorID" class ="form-control"></select>*@
+                <select asp-for="ProfessorID" asp-items="lista" class ="form-control"></select>
             </div>
         </div>
         <div class="form-group">
