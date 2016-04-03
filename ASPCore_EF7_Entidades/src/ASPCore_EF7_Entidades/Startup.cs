@@ -53,6 +53,13 @@ namespace ASPCore_EF7_Entidades
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+
+            services.AddEntityFramework()
+                .AddSqlServer()
+                .AddDbContext<DbContexto>(options =>
+                    options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionStringEscola"]));
+
+            //options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=DbContexto-ec666260-403a-46be-b5aa-f8f261c7c570;Trusted_Connection=True;MultipleActiveResultSets=true"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
