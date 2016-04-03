@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ViewComponent1.Models.Noticia>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Ultimas Noticias</div>
+
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item">@item.titulo</li>
+        }
+    </ul>
+</div>

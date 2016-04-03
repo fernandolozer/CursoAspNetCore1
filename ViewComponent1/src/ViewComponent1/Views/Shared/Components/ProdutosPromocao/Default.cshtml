@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ViewComponent1.Models.Produto>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Promoção de Produtos</div>
+
+    <ul class="list-group">
+        @foreach (var produto in Model)
+        {
+            <li class="list-group-item">@produto.Nome - @produto.Preco</li>
+        }
+    </ul>
+</div>
