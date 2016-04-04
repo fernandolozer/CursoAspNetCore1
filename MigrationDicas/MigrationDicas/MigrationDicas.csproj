@@ -168,14 +168,45 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AlunosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProfessoresController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604041252387_InitialCreate.cs" />
+    <Compile Include="Migrations\201604041252387_InitialCreate.Designer.cs">
+      <DependentUpon>201604041252387_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604041307250_AtributosNomeProfessor.cs" />
+    <Compile Include="Migrations\201604041307250_AtributosNomeProfessor.Designer.cs">
+      <DependentUpon>201604041307250_AtributosNomeProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604041311569_AddNovasPropriedades.cs" />
+    <Compile Include="Migrations\201604041311569_AddNovasPropriedades.Designer.cs">
+      <DependentUpon>201604041311569_AddNovasPropriedades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604041314518_NomeAlunoRequired.cs" />
+    <Compile Include="Migrations\201604041314518_NomeAlunoRequired.Designer.cs">
+      <DependentUpon>201604041314518_NomeAlunoRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604041332366_novaEntidadeProva.cs" />
+    <Compile Include="Migrations\201604041332366_novaEntidadeProva.Designer.cs">
+      <DependentUpon>201604041332366_novaEntidadeProva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604041337070_novaEntidadeProva2.cs" />
+    <Compile Include="Migrations\201604041337070_novaEntidadeProva2.Designer.cs">
+      <DependentUpon>201604041337070_novaEntidadeProva2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Aluno.cs" />
+    <Compile Include="Models\BancoContexto.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Professor.cs" />
+    <Compile Include="Models\Provas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -234,6 +265,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Professores\Create.cshtml" />
+    <Content Include="Views\Professores\Delete.cshtml" />
+    <Content Include="Views\Professores\Details.cshtml" />
+    <Content Include="Views\Professores\Edit.cshtml" />
+    <Content Include="Views\Professores\Index.cshtml" />
+    <Content Include="Views\Alunos\Create.cshtml" />
+    <Content Include="Views\Alunos\Delete.cshtml" />
+    <Content Include="Views\Alunos\Details.cshtml" />
+    <Content Include="Views\Alunos\Edit.cshtml" />
+    <Content Include="Views\Alunos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,6 +286,26 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604041252387_InitialCreate.resx">
+      <DependentUpon>201604041252387_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604041307250_AtributosNomeProfessor.resx">
+      <DependentUpon>201604041307250_AtributosNomeProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604041311569_AddNovasPropriedades.resx">
+      <DependentUpon>201604041311569_AddNovasPropriedades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604041314518_NomeAlunoRequired.resx">
+      <DependentUpon>201604041314518_NomeAlunoRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604041332366_novaEntidadeProva.resx">
+      <DependentUpon>201604041332366_novaEntidadeProva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604041337070_novaEntidadeProva2.resx">
+      <DependentUpon>201604041337070_novaEntidadeProva2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

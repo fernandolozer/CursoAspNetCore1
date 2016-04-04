@@ -1,0 +1,69 @@
+﻿@model IEnumerable<MigrationDicas.Models.Professor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Celular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TwitterBlog)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Materia)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Celular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Salario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TwitterBlog)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Materia)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProfessorID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProfessorID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProfessorID })
+        </td>
+    </tr>
+}
+
+    <div>
+        
+        
+           
+    </div>
+
+</table>
