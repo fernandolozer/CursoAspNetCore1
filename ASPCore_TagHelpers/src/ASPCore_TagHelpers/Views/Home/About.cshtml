@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+
+<strong>Uso de tagHelper.</strong>
+<h3>informacoes da empresa</h3>
+<web-site-information info="new WebSiteInfo { Aprovado = true,
+                                            CopyrightAno = 2016,
+                                            NumeroTags =20,
+                                            Version = new Version(1,3,4) }" />
