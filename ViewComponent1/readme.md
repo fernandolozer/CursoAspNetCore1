@@ -10,7 +10,7 @@ Ele também herda de `ViewComponent`
 
 ![imagem](img/view1.png)
 
-É preciso também criar, dentro da pasta `Shared` as pastas `Components` e depois a pasta com o mesmo nome das suas ViewsComponents, no caso `ProdutosPromocao`
+É preciso também criar, dentro da pasta `Shared` as pastas `Components` e depois a pasta com o mesmo nome das suas ViewsComponent
 
  ![imagem](img/view2.png)
 
