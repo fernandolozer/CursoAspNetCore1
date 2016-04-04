@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LinguagemCS6.FiltrosException</StartupObject>
+    <StartupObject>LinguagemCS6.ExpressoesLambda</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,13 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dicionarios.cs" />
+    <Compile Include="ExemploDelegateMSDN.cs" />
+    <Compile Include="ExplorarDelegates.cs" />
+    <Compile Include="ExpressoesLambda.cs" />
     <Compile Include="ExpressoesNameOf.cs" />
     <Compile Include="FiltrosException.cs" />
     <Compile Include="IniciarPropriedades.cs" />
+    <Compile Include="ParametrosOpcionais.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="removerUsing.cs" />
     <Compile Include="TestarNulos.cs" />
+    <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
